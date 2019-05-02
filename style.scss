@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=Anton|Pathway+Gothic+One|Roboto');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    height: 100vh;
+    video {
+        position: fixed;
+        width: 100%;
+        z-index: -1;
+    }
+    nav {
+        padding: 20px;
+        line-height: 134px;
+        text-align: right;
+    }
+        img {
+            height: 94px;
+            float: left;
+        }
+        a {
+            text-decoration: none;
+        }
+}
+
