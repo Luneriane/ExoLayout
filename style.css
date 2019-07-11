@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Anton|Pathway+Gothic+One|Roboto");
-body {
+* {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
@@ -7,6 +7,7 @@ body {
 }
 
 header {
+  display: block;
   height: 100vh;
 }
 
@@ -18,16 +19,104 @@ header video {
 
 header nav {
   padding: 20px;
-  line-height: 134px;
+  line-height: 94px;
   text-align: right;
 }
 
 header img {
-  height: 94px;
+  height: 8.6vh;
   float: left;
 }
 
 header a {
   text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  font-size: 24px;
+  font-family: 'Roboto', sans-serif;
+  padding: 0 20px;
+}
+
+header a:hover {
+  text-shadow: 2px 5px 5px  #fff799;
+}
+
+header h1 {
+  margin-left: 30vw;
+  margin-top: 15vh;
+  font-family: 'Anton', sans-serif;
+  font-size: 5em;
+  text-transform: uppercase;
+}
+
+header h2 {
+  margin-left: 30vw;
+  font-family: 'Pathway Gothic One', sans-serif;
+  font-size: 4em;
+  text-transform: uppercase;
+}
+
+#portfolio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+  height: 163vh;
+}
+
+#portfolio article {
+  width: 30vw;
+  height: 18vw;
+  border-radius: 0.3em;
+  overflow: hidden;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+#portfolio article p {
+  font-family: 'Pathway Gothic One', sans-serif;
+  background-color: rgba(255, 255, 255, 0.75);
+  padding: 30%;
+  text-align: center;
+  opacity: 0;
+}
+
+#portfolio article:hover p {
+  opacity: 1;
+}
+
+#portfolio .verticalIMG {
+  height: 39vw;
+}
+
+#portfolio .verticalIMG p {
+  font-family: 'Pathway Gothic One', sans-serif;
+  background-color: rgba(255, 255, 255, 0.75);
+  padding: 70% 0;
+  text-align: center;
+  opacity: 0;
+}
+
+footer {
+  height: 40vh;
+  padding: 5% 15%;
+  background-color: #fad9d6;
+}
+
+footer a {
+  line-height: 5em;
+}
+
+footer img {
+  height: 3em;
 }
 /*# sourceMappingURL=style.css.map */
